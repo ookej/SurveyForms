@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sponsor Registration</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Kode+Mono:wght@400..700&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <style>
+      *{
+        margin-top: 6px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kode Mono", monospace;
+      }
+      body{
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-image: url('https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260');
+        background-size: cover;
+        backdrop-filter: blur(1px); 
+      }
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+      .content{
+        max-width: 500px;
+        width: 100%;
+        backdrop-filter: blur(100px); 
+        padding: 20px;
+        border-radius: 10px;
+        columns: 100px 2;
+        column-gap: 30px;
+        text-align: left;
+        box-shadow: 0 0 100px rgba(0, 0, 0, .8); 
+      }
+      .button{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 20px;
+        backdrop-filter: blur(30px);
+        justify-content: space-between;
+        margin: 0;
+        display: flex;
+        align-items: right;
+        z-index: 100;
+      }
+      .home{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+      }
+      .navbar a{
+        color: white;
+        margin-right: 30px;
+      }
+      #reset-button,
+      #submit-button {
+        backdrop-filter: blur(10px); 
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 50px;
+        height: 35px;
+        width: 250px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+        background-color: rgba(255, 255, 255, 0.1); 
+      }
+      #reset-button:hover,
+      #submit-button:hover {
+        color: rgb(3, 3, 3);
+        background-color: rgb(255, 255, 255); 
+        transition: .10s;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="http://127.0.0.1:5500/main.html" class="home">HOME</a>
+      <nav class="navbar">
+        <a href="http://127.0.0.1:5500/sponsorreg.html">Sponsorhip</a>
+        <a href="http://127.0.0.1:5500/studentreg.html">Student</a>
+        <a href="http://127.0.0.1:5500/admission.html">Admission</a>
+      </nav>
+    </header>
+    <div class="container">
+    <h1>Sponsor Registration</h1>  
+    <div class="content">
+        <form action="#">
+          <label for="prefix">Prefix</label>
+          <input type="text" id="prefix"><br>
+
+          <label for="name">Name</label>
+          <input type="text" placeholder="First name">
+          <input type="text" placeholder="Last name"><br>
+
+          <label for="pronouns">Preferred Pronouns</label>
+          <input type="text" id="pronouns"><br>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="sample@example.com"><br>
+
+          <label for="workphone">Work Phone</label>
+          <input type="tel" id="workphone"><br>
+
+          <label for="cellphone">Cell Phone</label>
+          <input type="tel" id="cellphone"><br>
+
+          <label for="jobtitle">Job Title</label>
+          <input type="text" id="jobtitle"><br>
+
+          <label for="company">Company</label>
+          <input type="text" id="company"><br>
+
+          <label for="businessAdd">Full Business Address</label><br>
+          <input type="text" id="businessAdd"><br><br>
+
+          <label for="companyWeb">Company Website</label><br>
+          <input type="text" id="companyWeb"><br>
+
+          <label for="companyDesc">Company Description</label><br>
+          <textarea id="companyDesc" cols="20" rows="5"></textarea><br>
+
+          <label for="companyFBpage">Company Facebook Page</label><br>
+          <input type="text" id="companyFBpage"><br>
+
+          <label for="companyTwitterHandle">Company Twitter Handle</label><br>
+          <input type="text" id="companyTwitterHandle"><br>
+
+          <label for="companyLinkedInHandle">Company LinkedIn Handle</label><br>
+          <input type="text" id="companyLinkedInHandle"><br>
+
+          <label for="sponshorshipLevel">Sponsorship Level</label><br>
+          <input type="radio" name="sponshorshipLevel" id="gold">
+          <label for="gold">Gold</label><br>
+          <input type="radio" name="sponshorshipLevel" id="platinum">
+          <label for="platinum">Platinum</label><br>
+          <input type="radio" name="sponshorshipLevel" id="diamond">
+          <label for="diamond">Diamond</label><br>
+
+          <label for="addguests">Additional Guest(name,email)</label><br>
+          <input type="text" id="addguests"><br>
+
+        </form>
+    </div>
+      <button id="reset-button">Reset</button>
+      <button id="submit-button">Confirm</button>
+    </div>
+  </body>
+</html>

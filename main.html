@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Main Page</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 10px;
+        align-content: center;
+      }
+      body{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-image: url(https://images.pexels.com/photos/5477779/pexels-photo-5477779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      .container{
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+      .content{
+        max-width: 900px;
+        width: 100%;
+        backdrop-filter: blur(600px);
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        font-size: 25px;
+      }
+      #sponsor,
+      #admission,
+      #student{
+        box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+      }
+      #sponsor:hover,
+      #admission:hover,
+      #student:hover{
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        transition: .15s;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+    <h1>HOME PAGE</h1><br>
+    <div class="content">
+      <div id="sponsor">
+        <a id="sponsor-button" href="http://127.0.0.1:5500/sponsorreg.html">
+          <img src="https://images.pexels.com/photos/20530360/pexels-photo-20530360/free-photo-of-sponsor.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Sponsorship-Form" width="300px" height="200px">
+        </a>
+        <p>Sponsor Registration Form</p>
+      </div>
+        <div id="admission">
+          <a id="admission" href="http://127.0.0.1:5500/admission.html">
+            <img src="https://images.pexels.com/photos/20538091/pexels-photo-20538091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Admission" width="300px" height="200px">
+          </a>
+          <p>General Admission Form</p>
+        </div>
+        <div id="student">
+          <a id="student" href="http://127.0.0.1:5500/studentreg.html">
+            <img src="https://images.pexels.com/photos/20530372/pexels-photo-20530372/free-photo-of-student.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Student" width="300px" height="200px">
+          </a>
+          <p>Student Registration Form</p>
+        </div>
+    </div>
+  </div>
+  </body>
+</html>

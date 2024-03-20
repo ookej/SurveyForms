@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Registration Form</title>
+    <style>
+      *{
+        margin-top: 6px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Kode Mono", monospace;
+      }
+      body{
+        height: 60vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-image: url(https://images.pexels.com/photos/5088008/pexels-photo-5088008.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+      }
+      .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 450px;
+      height: 400px;
+      }
+      .content{
+        max-width: 500px;
+        width: 100%;
+        background-color: antiquewhite;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: left;
+        box-shadow: 0 0 100px rgba(0, 0, 0, .2); 
+        font-size: 18.5px;
+      }
+      .button{
+        text-align: center;
+        margin-top: 20px;
+      }
+      .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 20px;
+        background-color: rgb(150, 125, 95);
+        justify-content: space-between;
+        margin: 0;
+        display: flex;
+        align-items: right;
+        z-index: 100;
+      }
+      .home{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+      }
+      .navbar a{
+        color: white;
+        margin-right: 30px;
+      }
+      #birthdate{
+        width: 160px;
+      }
+      #courses{
+        width: 330px;
+      }
+      #email{
+        width: 330px;
+      }
+      #phone{
+        width: 270px;
+      }
+      #workphone{
+        width: 330px;
+      }
+      #company{
+        width: 330px;
+      }
+      #birthdate{
+        width: 217px;
+      }
+      #gender{
+        width: 257px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="http://127.0.0.1:5500/main.html" class="home">HOME</a>
+      <nav class="navbar">
+        <a href="http://127.0.0.1:5500/sponsorreg.html">Sponsorhip</a>
+        <a href="http://127.0.0.1:5500/studentreg.html">Student</a>
+        <a href="http://127.0.0.1:5500/admission.html">Admission</a>
+      </nav>
+    </header> 
+    <div class="container">
+      <div class="content">
+    <form>
+      <h1>Student Registration</h1>
+      <p>Fill out the form for registration.</p>
+      <hr>
+
+      <label for="name">Name</label><br>
+      <input type="text" id="name" placeholder="First">
+      <input type="text" id="name" placeholder="Last"><br>
+
+      <label for="birthdate">Birth Date</label>
+      <input type="date" id="birthdate"><br>
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Prefer not to say</option>
+      </select><br>
+      
+      <label for="address">Address</label><br>
+      <input type="text" id="address1" placeholder="Address Line 1"><br>
+      <input type="text" id="address2" placeholder="Address Line 2"><br>
+      <input type="text" id="city" placeholder="City">
+      <input type="text" id="region" placeholder="Region"><br>
+      <input type="text" id="zipcode" placeholder="Postal / Zip code">
+      <input type="text" id="country" placeholder="Country"><br>
+
+      <label for="email">Email</label><br>
+      <input type="email" id="email" placeholder="sample@example.com"><br>
+
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" placeholder="639-1234-56789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{5}"><br>
+      <label for="workphone">Work Phone</label>
+      <input type="tel" id="workphone" placeholder="639-1234-56789" pattern="[0-9]{3}-[0-9]{4}-[0-9]{5}"><br>
+
+      <label for="company">Company</label><br>
+      <input type="text" id="company" placeholder="ACME LTD"><br>
+
+      <label for="courses">Courses</label><br>
+      <select id="courses">
+        <option value="bsis">Bachelor of Science in Information Systems</option>
+        <option value="bsit">Bachelor of Science in Information Technology</option>
+        <option value="bit-ct">Bachelor of Industrial Technology Major in Computer Technology </option>
+      </select><br>
+
+      <label for="comments">Comments</label><br>
+      <textarea id="comments" cols="43" rows="3"></textarea><br>
+
+      <input type="reset">
+      <input type="submit">
+      </form>
+    </div>
+    </div>
+  </body>
+</html>

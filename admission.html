@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admission Form</title>
+    <style>
+      *{
+        margin-bottom: 0px;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      body{
+        height: 80vh;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-image: url(https://images.pexels.com/photos/245219/pexels-photo-245219.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+        background-size: cover;
+      }
+      .container{
+        margin-top: 80px;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+      }
+      .content{
+        margin-top: 40px;
+        max-width: 900px;
+        width: 100%;
+        background-color: rgb(255, 255, 255);
+        padding: 20px;
+        border-radius: 10px;
+        columns: 100px 2;
+        column-gap: 0;
+        text-align: left;
+        box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+        font-size: 25px;
+      }
+
+      .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 20px;
+        backdrop-filter: blur(20px);
+        justify-content: space-between;
+        margin: 0;
+        display: flex;
+        align-items: right;
+        z-index: 100;
+      }
+      .home{
+        font-size: 20px;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+      }
+      #email{
+        width: 333px;
+      }
+      #phone{
+        width: 325px;
+      }
+      #emergency{
+        width: 400px;
+      }
+      .header{
+        position: absolute;
+        top: 15px;
+        left: 0;
+        width: 100%;
+        padding: 5px 20px;
+        backdrop-filter: blur(10px); 
+        justify-content: space-between;
+        margin: 0;
+        display: flex;
+        align-items: right;
+        z-index: 100;
+      }
+      .navbar a{
+        color: white;
+        margin-right: 30px;
+      }
+      .home{
+        font-size: 20px;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        color: rgb(255, 255, 255);
+        font-weight: 700;
+      }
+      .button-container {
+        display: flex;
+        justify-content: space-between; 
+        max-width: 200px; 
+      }
+      #reset-button,
+      #submit-button {
+        margin-right: 5px;
+        backdrop-filter: blur(0px); 
+        color: rgb(255, 255, 255);
+        border: none;
+        border-radius: 50px;
+        height: 40px;
+        width: 600px;
+        font-weight: bold;
+        font-size: 15px;
+        cursor: pointer;
+        margin-top: 15px;
+        background-color: rgb(99, 61, 5);
+      }
+      #reset-button:hover,
+      #submit-button:hover {
+        background-color: rgba(255, 255, 255, 0.1); 
+        transition: .15s;
+        border-radius: 15px;
+      }
+
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <a href="http://127.0.0.1:5500/main.html" class="home">HOME</a>
+      <nav class="navbar">
+        <a href="http://127.0.0.1:5500/sponsorreg.html">Sponsorhip</a>
+        <a href="http://127.0.0.1:5500/studentreg.html">Student</a>
+        <a href="http://127.0.0.1:5500/admission.html">Admission</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h1 style="font-size: 50px; color: rgb(255, 255, 255);">General Admission Registration</h1>
+      <div class="content">
+        <form>
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="First Name">
+          <input type="text" id="name" placeholder="Last Name"><br>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="sample@example.com"><br>
+
+          <label for="gender">Gender</label>
+          <input type="radio" name="gender" id="male">
+          <label for="male">Male</label>
+          <input type="radio" name="gender" id="female">
+          <label for="female">Female</label><br>
+
+          <label for="phone">Phone</label>
+          <input type="tel" id="phone"><br>
+
+          <label for="emergency">Emergency Contact</label><br>
+          <input type="text" id="emergency"><br>
+
+          <label for="parking">Do you require parking?</label><br>
+          <input type="radio" name="parking" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="parking" id="no">
+          <label for="no">No</label><br>
+
+          <label for="preference">What is you room preference?</label><br>
+          <input type="radio" name="preference" id="single">
+          <label for="single">Single Room</label><br>
+          <input type="radio" name="preference" id="shared">
+          <label for="shared">Shared Room</label><br>
+          <input type="radio" name="preference" id="no">
+          <label for="no">No Rooms Needed</label><br><br><br><br>
+
+          <label for="dietary">Do you have dietary restrictions?</label><br>
+          <input type="radio" name="dietary" id="none">
+          <label for="none">None</label><br>
+          <input type="radio" name="dietary" id="veg">
+          <label for="veg">Vegetarian</label><br>
+          <input type="radio" name="dietary" id="glutt">
+          <label for="glutt">Glutten Allergy</label><br>
+          <input type="radio" name="dietary" id="lact">
+          <label for="lact">Lactose Allergy</label><br>
+          <input type="radio" name="dietary" id="nut">
+          <label for="nut">Nut Allergy</label><br>
+          <input type="radio" name="dietary" id="shell">
+          <label for="shell">Shellfish Allergy</label><br>
+
+          <label for="activities">What activities will you attend?</label><br>
+          <input type="radio" name="activities" id="awards">
+          <label for="awards">Awards Gala Dinner</label><br>
+          <input type="radio" name="activities" id="luncheon">
+          <label for="luncheon">Luncheon</label><br>
+          <input type="radio" name="activities" id="townhall">
+          <label for="townhall">Townhall</label><br>
+
+          <label for="see-the-list">Do you want to see the list of other attendees and their profiles on the official event app?</label><br>
+          <input type="radio" name="see-the-list" id="yes">
+          <label for="yes">Yes</label>
+          <input type="radio" name="see-the-list" id="no">
+          <label for="no">No</label><br>
+        </form>
+      </div>
+      <div class="button-container">
+        <input type="reset" id="reset-button">
+        <input type="submit" id="submit-button">
+      </div>
+    </div>
+  </body>
+</html>
